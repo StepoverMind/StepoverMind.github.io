@@ -1,67 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Basic Website</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f5f5f5;
-    }
-    header {
-      background: #333;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-    }
-    nav {
-      background: #444;
-      padding: 0.5rem;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-    }
-    main {
-      padding: 2rem;
-    }
-    footer {
-      background: #333;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Übersteiger - Stepover Mind</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #333;
+            text-align: center;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .image-gallery img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+        .footer {
+            margin-top: 4rem;
+            padding: 2rem 0;
+            background-color: #333;
+            color: white;
+        }
+        .footer a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
 
-  <header>
-    <h1>Welcome to My Website</h1>
-  </header>
+    <div class="header">
+        <h1>Willkommen bei Übersteiger - Stepover Mind!</h1>
+        <p>Ein Ort für coole Fußballmomente.</p>
+    </div>
 
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
-  </nav>
+    <div class="container">
+        <div class="image-gallery">
+            <img src="https://images.pexels.com/photos/4030438/pexels-photo-4030438.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Fußballspieler in Aktion">
+            <img src="https://images.pexels.com/photos/10772718/pexels-photo-10772718.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Fußball im Netz">
+            <img src="https://images.pexels.com/photos/5638162/pexels-photo-5638162.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Fußballstadion">
+            <img src="https://images.pexels.com/photos/4773223/pexels-photo-4773223.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Fußballschuhe">
+        </div>
+    </div>
 
-  <main>
-    <h2>Hello!</h2>
-    <p>This is a simple basic website made with HTML and a little CSS.</p>
-    <p>You can edit the text and styles to make it your own.</p>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 My Basic Website</p>
-  </footer>
+    <div class="footer">
+        <p>Bei Fragen wenden Sie sich an unseren Kundenservice:</p>
+        <p><a href="mailto:felixhandl97@gmail.com">felixhandl97@gmail.com</a></p>
+    </div>
 
 </body>
 </html>
